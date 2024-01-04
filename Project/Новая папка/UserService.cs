@@ -6,9 +6,9 @@ namespace Project.Новая_папка
     {
         List<User> Usersers = new List<User>()
              {
-            new User(){name="ali",email="asdfghjm", phone ="sdfghj"},
-              new User(){name="ali",email="asdfghjm", phone ="sdfghj"},
-                new User(){name="ali",email="asdfghjm", phone ="sdfghj"},
+           new User(){name="Mahmud",role="Oshpaz", phone =923848293},
+         new User(){name="Bilol",role="Waiter", phone =929384954},
+         new User(){name="Behzod", role="Manager", phone =87654323},
         };
 
         public void AddUser(User user)
