@@ -4,7 +4,7 @@ using Project.Models;
 
 namespace Project.Controllers
 {
-    public class UserController : Controller
+    public class Korgar : Controller
     {
         List<User> users = new List<User>()
         {
@@ -44,7 +44,5 @@ namespace Project.Controllers
             }
 
         }
-
-
     }
 }
