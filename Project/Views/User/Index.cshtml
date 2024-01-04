@@ -1,0 +1,32 @@
+﻿@model List<User>
+
+<div class="row">
+    <div class="col-md-12">
+        <a asp-action="Create" asp-controller="User" class="btn btn-success">AddUser</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+            <thead>
+            <tr>     
+                   <td>name</td>
+                   <td>email</td>
+                    <td>phone</td>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                      <td>@item.id</td>
+                    <td>@item.name</td>
+                    <td>@item.email</td>
+                    <td>@item.phone</td>
+
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

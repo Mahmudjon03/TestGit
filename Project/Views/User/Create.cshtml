@@ -1,0 +1,27 @@
+﻿@using Project.Models;
+@model User
+
+<form asp-action="create" method="post">
+    <div class="mb-3">
+        <label class="form-label">id</label>
+        <input asp-for="id" type="number" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label  class="form-label">Name</label>
+        <input asp-for="name" type="text" class="form-control"/>
+    </div>
+    <div class="mb-3">
+        <label  class="form-label">Email address</label>
+        <input asp-for="email" type="text" class="form-control" aria-describedby="emailHelp" />
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label  class="form-label">phone</label>
+        <input asp-for="phone" type="text" class="form-control"  />
+    </div>
+   
+    <div class="text-end">
+        <button type="submit" title="Post" class="btn btn-subtle me-2">Cancel</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
